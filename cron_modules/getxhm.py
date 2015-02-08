@@ -15,7 +15,7 @@ if __name__ == '__main__':
     # Skip the first title line ['#THUMB', '#URL', '#TITLE', '#CHANNEL', '#DURATION', '']
     newline_delimited_info = newline_delimited_info[1:]
 
-    db = MySQLdb.connect("localhost", "root", "", "tubehigh")
+    db = MySQLdb.connect("localhost", "root", "123456", "tubehigh")
     cursor = db.cursor()
 
     for pipe_delimited_info in enumerate(newline_delimited_info):

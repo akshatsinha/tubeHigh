@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 def categories(request):
     category_response = {}
-    db = MySQLdb.connect("localhost", "root", "", "tubehigh")
+    db = MySQLdb.connect("localhost", "root", "123456", "tubehigh")
     cursor = db.cursor()
 
     # Get all the categories from Category table
@@ -34,7 +34,7 @@ group by vid.category_id, vid.site
 
 
 def videobycategory(request, category):
-    db = MySQLdb.connect("localhost", "root", "", "tubehigh")
+    db = MySQLdb.connect("localhost", "root", "123456", "tubehigh")
     cursor = db.cursor()
     category_dict = {}
     video_response = {}
