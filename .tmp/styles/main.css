@@ -1,0 +1,17 @@
+/* Space out content a bit */
+body {
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+.th-container {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: left;
+  background: antiquewhite;
+}
+
+.hover-vid-box {
+  border: 1px black dotted;
+}
