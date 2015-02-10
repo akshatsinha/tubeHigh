@@ -3,7 +3,7 @@
         <div ng-repeat="info in vid.video_objects" ng-model="info.title" style="display:inline-block;">
             <div style="margin-top: 10px; margin-right: 5px; margin-left: 5px;">
                 <a href="{{info.video_url}}" target="_blank">
-                    <img src="{{info.thumbnail_url}}" style="border: 1px solid black">
+                    <img src="{{info.thumbnail_url}}" style="border: 1px solid black height: 180px;width: 240px;">
                     <br>
                     <span style="float:left; font-size: 12px; width: 185px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{info.title}}</span>
                 </a>
