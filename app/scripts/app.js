@@ -39,6 +39,7 @@ angular
   })
   .controller('CategoryCtrl', function ($http) {
     var cat = this;
+    // $http.get("http://54.148.153.124:8000/categories/")
     $http.get("http://localhost:8000/categories/")
       .success(function (response) {
         cat.category_objects = response;
@@ -47,6 +48,7 @@ angular
   .controller('VidCtrl', function ($http, $routeParams) {
     var vid = this;
     document.title = $routeParams['categoryName'] + ' Tube | tubeHigh.com';
+    // $http.get("http://54.148.153.124:8000/category/" + $routeParams['categoryName'] + '/')
     $http.get("http://localhost:8000/category/" + $routeParams['categoryName'] + '/')
       .success(function (response) {
         vid.video_objects = response;
