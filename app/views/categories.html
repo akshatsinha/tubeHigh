@@ -1,12 +1,12 @@
 <div class="th-container">
     <div ng-controller="CategoryCtrl as cat">
-        <div ng-repeat="category in cat.category_objects" style="display:inline-block;">
-            <div style="margin-top: 10px; margin-right: 5px; margin-left: 5px;" ng-class="{'hover-vid-box': hover}">
-                <a href="{{category.category_url}}" target="_blank" style="text-decoration: none">
-                    <img src="{{category.category_thumbnail}}" style="border: 1px solid black height: 180px;width: 240px;">
+        <div class="category-items" ng-repeat="category in cat.category_objects">
+            <div class="category-box" ng-class="{'hover-vid-box': hover}">
+                <a class="category-url" href="{{category.category_url}}" target="_blank">
+                    <img class="category-image" src="{{category.category_thumbnail}}" alt="{{category.category_name}}">
                     <br>
-                    <div style="text-align: center; margin-bottom: 10px;">
-                    <span style="color: chocolate; font-weight: bold; font-size: 16px; width: 185px; text-align: center; ">{{category.category_name}}</span>
+                    <div class="category-name-position">
+                    <span class="category-name">{{category.category_name}}</span>
                     </div>
                 </a>
             </div>

@@ -2,12 +2,7 @@
 
 angular
   .module('tubeHighApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+    'ngRoute'
   ])
   .run(function ($rootScope, $route) {
     $rootScope.$on('$routeChangeSuccess', function (newVal, oldVal) {
